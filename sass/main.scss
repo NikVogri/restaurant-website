@@ -1,7 +1,11 @@
-@import "reusables/mixins";
-@import "base/base";
-@import "base/animation";
-@import "base/typography";
-@import "base/utilities";
-
-@import "components/wrapper";
+@import "./reusables/mixins";
+@import "./base/base";
+@import "./base/animation";
+@import "./base/typography";
+@import "./base/utilities";
+@import "./reusables/mixins";
+@import "./layout/navigation";
+@import "./components/wrapper";
+@import "./layout/info-top";
+@import "./layout/hero";
+@import "./base/variables"

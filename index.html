@@ -1,30 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pikamania | Restavracija & Bar</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    <div class="info-top">
-        <ul class="info-top__language">
-            <li>Slovenščina(SLO)</li>
-            <li>English(UK)</li>
+  <body>
+    <section class="info-top">
+      <div class="info-top__language">
+        <ul class="info-top__language-selection no-decoration">
+          <li>Slovenščina(SLO)</li>
+          <li>English(UK)</li>
         </ul>
-    </div>
+      </div>
+      <div class="info-top__logo-big">
+        <img src="img/logos/logo-big.svg" alt="Big Logo" />
+      </div>
+      <div class="info-top__call-wrap">
+        <ul class="info-top__call no-decoration">
+          <li><strong>Rezervacija</strong>: 046 987 236</li>
+          <li><strong>Dostava</strong>: 041 879 906</li>
+        </ul>
+      </div>
+    </section>
 
+    <nav class="navigation">
+      <div class="navigation__inner">
+        <ul class="navigation__list no-decoration">
+          <li>Meni</li>
+          <li>Dogodki</li>
+          <li>Bar</li>
+          <li>O nas</li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero__image">
+        <img
+          src="../img/hero-small.jpg"
+          srcset="../img/hero-mid.jpg 1000w, ../img/hero-big.jpg 2000w"
+          alt="Main Hero Image"
+        />
+      </div>
 
-
-
-
-
-
-
-
-</body>
-
+      <h1 class="hero__header">
+        Restavracija in bar
+        <span class="hero__header--new-line"
+          >Pika<span class="hero__header--orange">mania</span></span
+        >
+      </h1>
+    </section>
+  </body>
 </html>
