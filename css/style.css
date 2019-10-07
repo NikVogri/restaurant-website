@@ -119,7 +119,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 .navigation {
   width: 100%;
-  height: 8rem;
+  height: 6rem;
   background: var(--main-orange-color); }
   .navigation__inner {
     width: 70%;
@@ -168,23 +168,68 @@ ORDER: Base + typography > general layout + grid > page layout > components
       margin-left: 2rem;
       color: var(--nav-blue-color); }
   .info-top__call {
-    display: flex;
     font-size: 2rem;
     margin-right: -4rem;
-    color: var(--main-black-color); }
+    color: var(--main-black-color);
+    position: relative; }
     @media only screen and (max-width: 75em) {
       .info-top__call {
         display: block; } }
     .info-top__call li:first-child {
       margin-right: 1.5rem;
       align-self: center; }
-    .info-top__call li:first-child::after {
-      content: "|";
-      font-size: 2rem;
-      margin-left: 1.5rem; }
+    .info-top__call li:first-child::before {
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: -1.5rem;
+      height: 80%;
+      width: 2px;
+      background: var(--main-dark-color); }
       @media only screen and (max-width: 75em) {
-        .info-top__call li:first-child::after {
+        .info-top__call li:first-child::before {
           content: ""; } }
+
+.hero {
+  height: calc(100vh - 16rem);
+  position: relative;
+  text-align: center;
+  line-height: 110px;
+  overflow: hidden; }
+  .hero__header {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 10rem;
+    color: var(--main-white-color);
+    font-family: "Sylfaen", sans-serif;
+    font-weight: 300;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
+    .hero__header::before {
+      content: "";
+      position: absolute;
+      top: -1.5rem;
+      right: 50%;
+      transform: translateX(50%);
+      width: 30%;
+      height: 5px;
+      background: var(--main-white-color); }
+    .hero__header::after {
+      content: "";
+      position: absolute;
+      bottom: -1.5rem;
+      left: 50%;
+      width: 30%;
+      transform: translateX(-50%);
+      height: 5px;
+      background: var(--main-white-color); }
+    .hero__header--new-line {
+      display: block; }
+    .hero__header--orange {
+      color: var(--main-orange-color); }
 
 :root {
   --nav-blue-color: #7898FF;

@@ -21,10 +21,10 @@
     }
 
     &__call {
-        display: flex;
         font-size: 2rem;
         margin-right: -4rem;
         color: var(--main-black-color);
+        position: relative;
 
         @include respond(tab-land) {
             display: block;
@@ -35,10 +35,14 @@
             align-self: center;
         }
 
-        & li:first-child::after {
-            content: "|";
-            font-size: 2rem;
-            margin-left: 1.5rem;
+        & li:first-child::before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: -1.5rem;
+            height: 80%;
+            width: 2px;
+            background: var(--main-dark-color);
 
             @include respond(tab-land) {
                 content: "";
