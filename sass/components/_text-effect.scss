@@ -1,0 +1,27 @@
+.horizontal-effect {
+    position: absolute;
+    display: block;
+    object-position: center;
+    top: 52%;
+    left: 50%;
+    width: 95%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.vertical-effect {
+    position: absolute;
+    display: block;
+    object-position: center;
+    top: 52%;
+    left: 50%;
+    width: 90%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    &--big {
+        height: 90%;
+    }
+}
