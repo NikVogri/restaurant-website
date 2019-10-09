@@ -3,11 +3,14 @@
     height: 6rem;
     background: var(--main-orange-color);
 
+    @include respond(tab-port) {
+        height: 0;
+    }
+
     &__inner {
         width: 70%;
         height: 100%;
         margin: 0 auto;
-        background: var(--main-orange-color);
     }
 
     &__list {
@@ -18,7 +21,7 @@
         font-family: "Sylfaen", sans-serif;
 
         @include respond(tab-port) {
-            height: 30%;
+            height: 33rem;
             z-index: 999999;
             background: #fff;
             display: block;
