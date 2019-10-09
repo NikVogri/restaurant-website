@@ -3,6 +3,10 @@
     height: 6rem;
     background: var(--main-orange-color);
 
+    @include respond(tab-port) {
+        height: 0;
+    }
+
     &__inner {
         width: 70%;
         height: 100%;
@@ -16,11 +20,37 @@
         align-items: center;
         font-family: "Sylfaen", sans-serif;
 
+        @include respond(tab-port) {
+            height: 30%;
+            z-index: 999999;
+            background: #fff;
+            display: block;
+            position: absolute;
+            border-top: 1px solid var(--main-dark-color);
+            top: 16.5rem;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 5px;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+
         & li {
             font-size: 2.5rem;
             color: var(--main-white-color);
             cursor: pointer;
             position: relative;
+
+            @include respond(tab-port) {
+                color: var(--main-dark-color);
+                border-bottom: 1px solid var(--main-dark-color);
+                margin: 0 auto;
+                width: 13rem;
+                font-size: 3rem;
+                padding: 1rem;
+            }
 
             &::before {
                 content: "";
@@ -38,4 +68,9 @@
             }
         }
     }
+}
+
+.display-me {
+    opacity: 1;
+    visibility: visible;
 }

@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="237" height="1163" viewBox="0 0 237 1163"><defs><style>.a,.c{fill:none;}.a{stroke:#fff;stroke-width:5px;}.b{stroke:none;}</style></defs><g transform="translate(-205 -2204)"><g class="a" transform="translate(205 2223)"><rect class="b" width="177" height="1144"/><rect class="c" x="2.5" y="2.5" width="172" height="1139"/></g><g class="a" transform="translate(265 2204)"><rect class="b" width="177" height="1141"/><rect class="c" x="2.5" y="2.5" width="172" height="1136"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="237" height="1163" viewBox="0 0 237 1163">
+  <g id="Group_127" data-name="Group 127" transform="translate(-205 -2204)">
+    <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(205 2223)" fill="none" stroke="#fff" stroke-width="5">
+      <rect width="177" height="1144" stroke="none"/>
+      <rect x="2.5" y="2.5" width="172" height="1139" fill="none"/>
+    </g>
+    <g id="Rectangle_41" data-name="Rectangle 41" transform="translate(265 2204)" fill="none" stroke="#fff" stroke-width="5">
+      <rect width="177" height="1141" stroke="none"/>
+      <rect x="2.5" y="2.5" width="172" height="1136" fill="none"/>
+    </g>
+  </g>
+</svg>
