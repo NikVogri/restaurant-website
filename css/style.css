@@ -176,6 +176,35 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .display-me {
   display: block; }
 
+.footer {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-around; }
+  .footer__header {
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase; }
+  .footer__povezave ul {
+    font-size: 15px; }
+    .footer__povezave ul li {
+      color: var(--main-dark-color); }
+  .footer__kontakt {
+    margin: 0 .3rem;
+    font-size: 15px; }
+    .footer__kontakt-number {
+      margin-bottom: 1rem; }
+    .footer__kontakt p {
+      line-height: 1.1; }
+  .footer__social {
+    text-align: center; }
+    .footer__social-image {
+      display: inline-block;
+      height: 30px;
+      width: 30px; }
+    .footer__social-image:not(last-child) {
+      margin-left: 1.5rem; }
+
 .wrapper {
   width: 90%;
   margin: 0 auto; }

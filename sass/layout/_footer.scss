@@ -1,0 +1,48 @@
+.footer {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-around;
+
+    &__header {
+        font-family: "roboto", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        text-transform: uppercase;
+
+    }
+
+    &__povezave ul {
+        font-size: 15px;
+
+        & li {
+            color: var(--main-dark-color);
+        }
+    }
+
+    &__kontakt {
+        margin: 0 .3rem;
+        font-size: 15px;
+
+        &-number {
+            margin-bottom: 1rem;
+        }
+
+        & p {
+            line-height: 1.1;
+        }
+    }
+
+    &__social {
+        text-align: center;
+
+        &-image {
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+        }
+
+        &-image:not(last-child) {
+            margin-left: 1.5rem;
+        }
+    }
+}
