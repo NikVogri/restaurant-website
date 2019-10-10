@@ -35,6 +35,11 @@
             transform: translateX(-3%);
             height: 10rem;
         }
+
+        @include respond(small-phone) {
+            height: 7rem;
+        }
+
     }
 
     &__call {

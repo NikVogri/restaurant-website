@@ -177,14 +177,35 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: block; }
 
 .footer {
-  padding: 1.5rem 2rem;
+  padding: 5rem 2rem;
   display: flex;
   justify-content: space-around; }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      text-align: center; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 3rem 0;
+      flex-direction: column;
+      justify-content: none; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer__logo-big {
+      order: 0;
+      margin-bottom: .5rem; } }
+  @media only screen and (max-width: 25em) {
+    .footer__logo-big img {
+      width: 30rem; } }
   .footer__header {
     font-family: "roboto", sans-serif;
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__header {
+        display: none; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer__povezave {
+      display: none; } }
   .footer__povezave ul {
     font-size: 15px; }
     .footer__povezave ul li {
@@ -196,6 +217,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
       margin-bottom: 1rem; }
     .footer__kontakt p {
       line-height: 1.1; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__kontakt {
+        order: 1;
+        margin-bottom: .5rem; } }
   .footer__social {
     text-align: center; }
     .footer__social-image {
@@ -203,6 +228,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
       height: 30px;
       width: 30px;
       margin: 0 1rem; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__social-image {
+          height: 35px;
+          width: 35px; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__social {
+        order: 2; } }
   .footer__legal {
     font-size: 13px;
     text-decoration: underline; }
@@ -242,6 +274,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .info-top__logo-big img {
       transform: translateX(-3%);
       height: 10rem; } }
+  @media only screen and (max-width: 25em) {
+    .info-top__logo-big img {
+      height: 7rem; } }
   .info-top__call {
     width: 100%;
     font-size: 1.5rem;
