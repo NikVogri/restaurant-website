@@ -201,9 +201,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .footer__social-image {
       display: inline-block;
       height: 30px;
-      width: 30px; }
-    .footer__social-image:not(last-child) {
-      margin-left: 1.5rem; }
+      width: 30px;
+      margin: 0 1rem; }
+  .footer__legal {
+    font-size: 13px;
+    text-decoration: underline; }
 
 .wrapper {
   width: 90%;
