@@ -72,6 +72,13 @@ body {
   font-weight: 700;
   text-transform: uppercase; }
 
+.header-secondary {
+  font-family: "roboto", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-top: 10rem;
+  text-align: center; }
+
 .no-decoration {
   list-style: none;
   text-decoration: none; }
@@ -301,6 +308,114 @@ ORDER: Base + typography > general layout + grid > page layout > components
       @media only screen and (max-width: 75em) {
         .info-top__call li:first-child::before {
           content: ""; } }
+
+.jedi__hero__header {
+  font-family: "Sylfaen", sans-serif;
+  display: block;
+  width: 100%;
+  height: 59rem;
+  background: var(--main-dark-color);
+  position: relative; }
+  .jedi__hero__header img {
+    opacity: .7;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .jedi__hero__header-text {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-weight: 300;
+    color: var(--main-white-color); }
+    .jedi__hero__header-text::before {
+      content: "";
+      position: absolute;
+      top: 2.5rem;
+      left: -75%;
+      height: 3px;
+      width: 250%;
+      background: var(--main-white-color); }
+    .jedi__hero__header-text::after {
+      content: "";
+      position: absolute;
+      bottom: 2.5rem;
+      left: -75%;
+      height: 3px;
+      width: 250%;
+      background: var(--main-white-color); }
+
+.predstavitev__box {
+  display: flex;
+  padding-bottom: 10rem; }
+  .predstavitev__box--orange {
+    background: linear-gradient(#E17E24, #F9AB63);
+    padding: 0;
+    margin-bottom: 10rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15); }
+  .predstavitev__box-img {
+    display: block;
+    height: 450px;
+    width: 800px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3); }
+    .predstavitev__box-img img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center; }
+  .predstavitev__box-leva--reverse {
+    order: 1; }
+  .predstavitev__box-desna {
+    display: flex;
+    position: relative; }
+  .predstavitev__box-header {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    position: absolute;
+    padding: 0 2rem;
+    top: 25%;
+    left: 0; }
+    .predstavitev__box-header--white {
+      color: var(--main-white-color);
+      top: 20%;
+      left: 92%; }
+    .predstavitev__box-header span {
+      display: flex;
+      flex-direction: column;
+      align-self: center; }
+  .predstavitev__box-text {
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    width: 70%;
+    position: relative; }
+    .predstavitev__box-text--white {
+      color: var(--main-white-color); }
+      .predstavitev__box-text--white::before {
+        background: var(--main-white-color) !important; }
+      .predstavitev__box-text--white::after {
+        background: var(--main-white-color) !important; }
+    .predstavitev__box-text::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background: var(--main-dark-color); }
+    .predstavitev__box-text::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background: var(--main-dark-color); }
 
 .hero {
   position: relative;
@@ -724,3 +839,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .burger__menu--open .burger-menu__middle::after {
   transform: rotate(135deg);
   top: 0; }
+
+.predstavitev {
+  padding: 30rem 5rem 5rem 0; }

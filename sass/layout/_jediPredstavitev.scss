@@ -1,0 +1,101 @@
+.predstavitev__box {
+    display: flex;
+    padding-bottom: 10rem;
+
+    &--orange {
+        background: linear-gradient(#E17E24, #F9AB63);
+        padding: 0;
+        margin-bottom: 10rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, .15);
+    }
+
+    &-img {
+        display: block;
+        height: 450px;
+        width: 800px;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, .3);
+
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &-leva {
+        &--reverse {
+            order: 1;
+        }
+    }
+
+    &-desna {
+        display: flex;
+        position: relative;
+
+    }
+
+    &-header {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1;
+        position: absolute;
+        padding: 0 2rem;
+        top: 25%;
+        left: 0;
+
+        &--white {
+            color: var(--main-white-color);
+            top: 20%;
+            left: 92%;
+        }
+
+        & span {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+    }
+
+    &-text {
+        font-weight: 300;
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+        padding: 2rem;
+        width: 70%;
+        position: relative;
+
+        &--white {
+            color: var(--main-white-color);
+
+            &::before {
+                background: var(--main-white-color) !important;
+            }
+
+            &::after {
+                background: var(--main-white-color) !important;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background: var(--main-dark-color);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background: var(--main-dark-color);
+        }
+    }
+}
