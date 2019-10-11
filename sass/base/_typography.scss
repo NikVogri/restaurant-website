@@ -18,6 +18,14 @@
      text-transform: uppercase;
      margin-top: 10rem;
      text-align: center;
+
+     @include respond(tab-landplus) {
+         font-size: 35px;
+     }
+
+     @include respond(phone) {
+         font-size: 30px;
+     }
  }
 
  .no-decoration {

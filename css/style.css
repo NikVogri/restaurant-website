@@ -78,6 +78,12 @@ body {
   text-transform: uppercase;
   margin-top: 10rem;
   text-align: center; }
+  @media only screen and (max-width: 62.5em) {
+    .header-secondary {
+      font-size: 35px; } }
+  @media only screen and (max-width: 37.5em) {
+    .header-secondary {
+      font-size: 30px; } }
 
 .no-decoration {
   list-style: none;
@@ -330,6 +336,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
     font-size: 120px;
     font-weight: 300;
     color: var(--main-white-color); }
+    @media only screen and (max-width: 75em) {
+      .jedi__hero__header-text {
+        line-height: 1.1;
+        border-bottom: 3px solid var(--main-white-color); } }
     .jedi__hero__header-text::before {
       content: "";
       position: absolute;
@@ -338,6 +348,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
       height: 3px;
       width: 250%;
       background: var(--main-white-color); }
+      @media only screen and (max-width: 75em) {
+        .jedi__hero__header-text::before {
+          content: none; } }
     .jedi__hero__header-text::after {
       content: "";
       position: absolute;
@@ -346,20 +359,46 @@ ORDER: Base + typography > general layout + grid > page layout > components
       height: 3px;
       width: 250%;
       background: var(--main-white-color); }
+      @media only screen and (max-width: 75em) {
+        .jedi__hero__header-text::after {
+          content: none; } }
 
 .predstavitev__box {
   display: flex;
   padding-bottom: 10rem; }
+  @media only screen and (max-width: 75em) {
+    .predstavitev__box {
+      flex-direction: column;
+      padding-bottom: 1rem;
+      margin-bottom: 5rem; } }
   .predstavitev__box--orange {
     background: linear-gradient(#E17E24, #F9AB63);
     padding: 0;
     margin-bottom: 10rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15); }
+    @media only screen and (max-width: 75em) {
+      .predstavitev__box--orange {
+        padding-bottom: 2rem;
+        margin-bottom: 5rem; } }
   .predstavitev__box-img {
     display: block;
     height: 450px;
     width: 800px;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3); }
+    @media only screen and (max-width: 87.5em) {
+      .predstavitev__box-img {
+        height: 350px;
+        width: 650px; } }
+    @media only screen and (max-width: 75em) {
+      .predstavitev__box-img {
+        height: 350px;
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 10rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .predstavitev__box-img {
+        height: 250px;
+        width: 100%; } }
     .predstavitev__box-img img {
       height: 100%;
       width: 100%;
@@ -367,6 +406,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
       object-position: center; }
   .predstavitev__box-leva--reverse {
     order: 1; }
+  @media only screen and (max-width: 75em) {
+    .predstavitev__box-leva {
+      order: 0; } }
   .predstavitev__box-desna {
     display: flex;
     position: relative; }
@@ -375,17 +417,46 @@ ORDER: Base + typography > general layout + grid > page layout > components
     font-weight: 700;
     line-height: 1;
     position: absolute;
+    text-align: center;
     padding: 0 2rem;
     top: 25%;
     left: 0; }
+    @media only screen and (max-width: 100em) {
+      .predstavitev__box-header {
+        left: -4rem;
+        font-size: 40px;
+        padding: 0 1rem;
+        margin-right: 1rem;
+        top: 12.5%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
+    @media only screen and (max-width: 87.5em) {
+      .predstavitev__box-header {
+        padding: 0 .5rem;
+        margin-right: 0 .5rem; } }
+    @media only screen and (max-width: 75em) {
+      .predstavitev__box-header {
+        top: -5rem;
+        width: 100%; } }
     .predstavitev__box-header--white {
       color: var(--main-white-color);
       top: 20%;
       left: 92%; }
+      @media only screen and (max-width: 100em) {
+        .predstavitev__box-header--white {
+          top: 15%;
+          left: 50%;
+          transform: translate(-50%, -50%); } }
+      @media only screen and (max-width: 75em) {
+        .predstavitev__box-header--white {
+          top: -5rem; } }
     .predstavitev__box-header span {
       display: flex;
       flex-direction: column;
       align-self: center; }
+      @media only screen and (max-width: 100em) {
+        .predstavitev__box-header span {
+          display: inline-block; } }
   .predstavitev__box-text {
     font-weight: 300;
     font-size: 30px;
@@ -394,6 +465,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
     padding: 2rem;
     width: 70%;
     position: relative; }
+    @media only screen and (max-width: 100em) {
+      .predstavitev__box-text {
+        padding: 1rem;
+        width: 90%;
+        font-size: 25px; } }
+    @media only screen and (max-width: 87.5em) {
+      .predstavitev__box-text {
+        font-size: 20px; } }
+    @media only screen and (max-width: 75em) {
+      .predstavitev__box-text {
+        width: 45%; } }
+    @media only screen and (max-width: 37.5em) {
+      .predstavitev__box-text {
+        width: 90%; } }
     .predstavitev__box-text--white {
       color: var(--main-white-color); }
       .predstavitev__box-text--white::before {
@@ -842,3 +927,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .predstavitev {
   padding: 30rem 5rem 5rem 0; }
+  @media only screen and (max-width: 100em) {
+    .predstavitev {
+      padding: 30rem 1rem 1rem 0; } }
+  @media only screen and (max-width: 87.5em) {
+    .predstavitev {
+      padding: 30rem 0 0 0; } }
