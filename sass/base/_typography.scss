@@ -7,9 +7,16 @@
  }
 
  //default headings
- .heading-tertiary {
+ .header-tertiary {
      font-weight: 700;
      text-transform: uppercase;
+     text-align: center;
+     font-size: 35px;
+     margin-bottom: 4rem;
+ }
+
+ a {
+     text-decoration: none;
  }
 
  .header-secondary {

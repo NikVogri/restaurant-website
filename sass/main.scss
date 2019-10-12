@@ -1,18 +1,28 @@
 @import "./reusables/mixins";
+
+@import "./components/text-effect";
+@import "./components/burger-menu";
+@import "./components/form";
+@import "./components/button";
+
 @import "./base/base";
 @import "./base/animation";
 @import "./base/typography";
 @import "./base/utilities";
-@import "./reusables/mixins";
+@import "./base/variables";
+
+@import "./components/wrapper";
+
 @import "./layout/navigation";
 @import "./layout/footer";
-@import "./components/wrapper";
 @import "./layout/info-top";
 @import "./layout/jediHeader";
 @import "./layout/jediPredstavitev";
 @import "./layout/hero";
-@import "./base/variables";
+@import "./layout/dogodkiHeader";
 @import "./layout/presentation";
-@import "./components/text-effect";
-@import "./components/burger-menu";
+@import "./layout/sobe";
+
+
 @import "./pages/jedi";
+@import "./pages/dogodki";

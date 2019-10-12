@@ -1,0 +1,15 @@
+.btn {}
+
+.btn-form {
+    display: block;
+    border: 1px solid var(--main-dark-color);
+    background: none;
+    padding: 1rem 2rem;
+    font-family: "roboto", sans-serif;
+    margin: 2rem auto;
+    transition: transform .2s ease-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

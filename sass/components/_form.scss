@@ -1,0 +1,76 @@
+.dogodki__form {
+    padding: 5rem 0;
+
+    &-top {
+        @include formRow;
+
+        & input {
+            width: 15rem;
+            @include formInput;
+
+            &:first-child {
+                margin-right: 2rem;
+            }
+        }
+
+        &__text {
+            display: flex;
+            justify-content: space-between;
+            @include formParagraph;
+        }
+    }
+
+    &-datum {
+        @include formRow;
+
+        & input {
+            width: 30rem;
+            @include formInput;
+        }
+
+        @include formParagraph;
+    }
+
+    &-contact {
+
+        @include formRow;
+
+        &__text {
+            display: flex;
+            justify-content: space-between;
+            @include formParagraph;
+        }
+
+        & input {
+            width: 15rem;
+            @include formInput;
+
+            &:nth-child(2) {
+                width: 21rem !important;
+            }
+
+            &:last-child {
+                width: 9rem;
+            }
+        }
+    }
+
+    &-dodatno {
+        @include formRow;
+
+        &__text {
+            @include formParagraph;
+        }
+
+        & input {
+            width: 30rem;
+            height: 15rem;
+            border: 1px solid var(--main-dark-color);
+            font-size: 1.5rem;
+            padding: .5rem 0;
+            font-family: "roboto",
+                sans-serif;
+            border-radius: 2px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.dogodki__hero__header {
+    &-text {
+        @include respond(tab-landplus) {
+            font-size: 80px;
+        }
+
+        @include respond(phone) {
+            font-size: 50px;
+        }
+
+        &::before {
+            width: 150%;
+            left: -25%;
+        }
+
+        &::after {
+            width: 150%;
+            left: -25%;
+        }
+    }
+}
