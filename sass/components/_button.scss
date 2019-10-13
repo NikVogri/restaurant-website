@@ -13,3 +13,25 @@
         transform: scale(1.05);
     }
 }
+
+
+.dogodki__sobe-btn {
+    z-index: 10;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border: 2px solid var(--main-white-color);
+    color: var(--main-white-color);
+    background: none;
+    font-size: 2rem !important;
+    padding: 1.5rem 2rem;
+    font: inherit;
+    cursor: pointer;
+    transition: all .2s ease;
+
+    &:hover {
+        transform: translate(-50%, -50%) scale(1.01);
+    }
+}

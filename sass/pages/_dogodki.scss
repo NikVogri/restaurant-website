@@ -1,6 +1,10 @@
 .dogodki {
     padding: 5rem 5rem;
 
+    &__parallax__img-wrapper {
+        position: relative;
+    }
+
     &__parallax__img {
         margin-top: 25rem;
         background: url('../../img/dogodki/parallax-big.jpg') no-repeat center;
@@ -11,6 +15,28 @@
         &-wrapper {
             width: 100%;
             height: 50rem;
+        }
+    }
+
+    &__parallax__text {
+        position: absolute;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: var(--main-white-color);
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        padding: 5rem 3rem;
+        line-height: 1.8;
+        background: rgba(0, 0, 0, .5);
+        transform: translate(-50%, -50%);
+        width: 35%;
+
+        & span {
+            display: block;
+            text-align: right;
+            font-size: 1.8rem;
+            margin: 2.5rem 2rem 0 0;
         }
     }
 }

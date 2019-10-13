@@ -217,6 +217,24 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .btn-form:hover {
     transform: scale(1.05); }
 
+.dogodki__sobe-btn {
+  z-index: 10;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border: 2px solid var(--main-white-color);
+  color: var(--main-white-color);
+  background: none;
+  font-size: 2rem !important;
+  padding: 1.5rem 2rem;
+  font: inherit;
+  cursor: pointer;
+  transition: all .2s ease; }
+  .dogodki__sobe-btn:hover {
+    transform: translate(-50%, -50%) scale(1.01); }
+
 *,
 *::after,
 *::before {
@@ -263,6 +281,17 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0; }
+  1% {
+    display: block;
+    opacity: 0; }
+  100% {
+    display: block;
+    opacity: 1; } }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -1050,43 +1079,78 @@ a {
       transform: scale(1.015); }
 
 .dogodki__sobe {
-  padding: 10rem 5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 40rem);
-  position: relative; }
+  padding: 10rem 0;
+  text-align: center; }
+  .dogodki__sobe-text {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: inherit;
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left: 50%;
+    color: var(--main-white-color);
+    transform: translate(-50%, -50%);
+    transition: all .2s ease;
+    z-index: 10; }
+    .dogodki__sobe-text::before {
+      content: "";
+      height: 3px;
+      width: 50%;
+      background: var(--main-white-color);
+      position: absolute;
+      top: -5%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .dogodki__sobe-text::after {
+      content: "";
+      height: 3px;
+      width: 35%;
+      background: var(--main-white-color);
+      position: absolute;
+      bottom: -10%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .dogodki__sobe-list {
+    font-size: 1.7rem;
+    font-family: inherit;
+    font-weight: 300;
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--main-white-color);
+    transition: all .2s ease; }
+    .dogodki__sobe-list li {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--main-white-color); }
   .dogodki__sobe-img {
-    height: 40rem;
-    width: 55rem;
-    position: absolute; }
+    display: inline-block;
+    margin: 2rem 2rem;
+    position: relative;
+    background: var(--main-dark-color);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+    transition: all .2s ease; }
+    .dogodki__sobe-img-hide {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.2s, visibility 0.2s; }
+    .dogodki__sobe-img:hover .dogodki__sobe-img-hide {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.2s, visibility 0.2s; }
+    .dogodki__sobe-img:hover img {
+      transform: scale(1.01);
+      filter: brightness(55%); }
     .dogodki__sobe-img img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover; }
-  .dogodki__sobe-img1 {
-    grid-column: 3 / 4;
-    top: 25%;
-    left: -10%; }
-  .dogodki__sobe-img2 {
-    top: 30%;
-    left: 5%; }
-  .dogodki__sobe-img3 {
-    grid-column: 3 / 4;
-    grid-row: 3 /4;
-    left: -25%; }
-
-.orangeBackground {
-  background: var(--main-orange-color);
-  height: 100%;
-  width: 100%;
-  box-sizing: content-box; }
-  .orangeBackground1 {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3; }
-  .orangeBackground2 {
-    padding-bottom: 5rem;
-    grid-column: 2 / 4;
-    grid-row: 3 / 4; }
+      width: 35rem;
+      height: 75rem;
+      object-fit: cover;
+      transition: all .2s ease; }
+      .dogodki__sobe-img img:not(:last-child) {
+        object-position: right; }
 
 .predstavitev {
   padding: 30rem 5rem 5rem 0; }
@@ -1099,6 +1163,8 @@ a {
 
 .dogodki {
   padding: 5rem 5rem; }
+  .dogodki__parallax__img-wrapper {
+    position: relative; }
   .dogodki__parallax__img {
     margin-top: 25rem;
     background: url("../../img/dogodki/parallax-big.jpg") no-repeat center;
@@ -1108,3 +1174,21 @@ a {
     .dogodki__parallax__img-wrapper {
       width: 100%;
       height: 50rem; }
+  .dogodki__parallax__text {
+    position: absolute;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--main-white-color);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    padding: 5rem 3rem;
+    line-height: 1.8;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+    width: 35%; }
+    .dogodki__parallax__text span {
+      display: block;
+      text-align: right;
+      font-size: 1.8rem;
+      margin: 2.5rem 2rem 0 0; }
