@@ -1133,10 +1133,17 @@ a {
     background: var(--main-dark-color);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
     transition: all .2s ease; }
+    @media only screen and (max-width: 56.25em) {
+      .dogodki__sobe-img {
+        width: 75% !important; } }
     .dogodki__sobe-img-hide {
       visibility: hidden;
       opacity: 0;
       transition: opacity 0.2s, visibility 0.2s; }
+      @media only screen and (max-width: 87.5em) {
+        .dogodki__sobe-img-hide {
+          visibility: visible;
+          opacity: 1; } }
     .dogodki__sobe-img:hover .dogodki__sobe-img-hide {
       visibility: visible;
       opacity: 1;
@@ -1151,6 +1158,15 @@ a {
       transition: all .2s ease; }
       .dogodki__sobe-img img:not(:last-child) {
         object-position: right; }
+      @media only screen and (max-width: 87.5em) {
+        .dogodki__sobe-img img {
+          filter: brightness(55%); } }
+      @media only screen and (max-width: 56.25em) {
+        .dogodki__sobe-img img {
+          width: 100% !important; } }
+      @media only screen and (max-width: 37.5em) {
+        .dogodki__sobe-img img {
+          width: 100%; } }
 
 .predstavitev {
   padding: 30rem 5rem 5rem 0; }
@@ -1163,6 +1179,9 @@ a {
 
 .dogodki {
   padding: 5rem 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .dogodki {
+      padding: 5rem 0; } }
   .dogodki__parallax__img-wrapper {
     position: relative; }
   .dogodki__parallax__img {
@@ -1187,6 +1206,16 @@ a {
     background: rgba(0, 0, 0, 0.5);
     transform: translate(-50%, -50%);
     width: 35%; }
+    @media only screen and (max-width: 62.5em) {
+      .dogodki__parallax__text {
+        width: 50%; } }
+    @media only screen and (max-width: 56.25em) {
+      .dogodki__parallax__text {
+        width: 60%; } }
+    @media only screen and (max-width: 37.5em) {
+      .dogodki__parallax__text {
+        width: 100%;
+        line-height: 1.5; } }
     .dogodki__parallax__text span {
       display: block;
       text-align: right;

@@ -66,11 +66,20 @@
         box-shadow: 0 1rem 1rem rgba(0, 0, 0, .25);
         transition: all .2s ease;
 
+        @include respond(tab-port) {
+            width: 75% !important;
+        }
+
         &-hide {
             visibility: hidden;
             opacity: 0;
             transition: opacity 0.2s,
                 visibility 0.2s;
+
+            @include respond(small-desktop) {
+                visibility: visible;
+                opacity: 1;
+            }
         }
 
         &:hover &-hide {
@@ -93,6 +102,19 @@
 
             &:not(:last-child) {
                 object-position: right;
+            }
+
+            @include respond(small-desktop) {
+                filter: brightness(55%);
+            }
+
+            @include respond(tab-port) {
+                width: 100% !important;
+            }
+
+
+            @include respond(phone) {
+                width: 100%;
             }
         }
     }

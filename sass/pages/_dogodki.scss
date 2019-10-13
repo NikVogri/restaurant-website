@@ -1,6 +1,10 @@
 .dogodki {
     padding: 5rem 5rem;
 
+    @include respond(tab-port) {
+        padding: 5rem 0;
+    }
+
     &__parallax__img-wrapper {
         position: relative;
     }
@@ -31,6 +35,19 @@
         background: rgba(0, 0, 0, .5);
         transform: translate(-50%, -50%);
         width: 35%;
+
+        @include respond(tab-landplus) {
+            width: 50%;
+        }
+
+        @include respond(tab-port) {
+            width: 60%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            line-height: 1.5;
+        }
 
         & span {
             display: block;
