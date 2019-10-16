@@ -39,3 +39,97 @@
      list-style: none;
      text-decoration: none;
  }
+
+
+ .meni__header {
+     margin: 2rem 0;
+     font-family: 'Sylfaen', sans-serif;
+     font-size: 55px;
+     color: var(--main-orange-color);
+     position: relative;
+
+     @include respond(phone) {
+         text-align: center;
+     }
+
+     @include respond(phone) {
+         font-size: 45px;
+         margin: 5rem 0;
+     }
+
+     &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 15%;
+         height: 3px;
+         background: var(--main-orange-color);
+
+         @include respond(phone) {
+             width: 100%;
+         }
+     }
+
+     &::after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 50%;
+         height: 3px;
+         background: var(--main-orange-color);
+
+         @include respond(phone) {
+             width: 100%;
+         }
+     }
+
+ }
+
+ .meni__jediHeader {
+     font-family: 'Sylfaen',
+         sans-serif;
+     font-size: 35px;
+     color: var(--main-orange-color);
+     text-align: left;
+
+     @include respond(phone) {
+         font-size: 25px;
+         text-align: center;
+     }
+ }
+
+ .meni__jediText {
+     font-family: 'roboto', sans-serif;
+     font-size: 20px;
+     text-align: left;
+     color: inherit;
+
+     @include respond(phone) {
+         font-size: 16px;
+     }
+ }
+
+ .meni__pijacaHeader {
+     font-family: 'Sylfaen',
+         sans-serif;
+     font-size: 35px;
+     color: var(--main-orange-color);
+     text-align: center;
+
+     @include respond(phone) {
+         font-size: 25px;
+     }
+ }
+
+ .meni__pijacaText {
+     font-family: 'roboto', sans-serif;
+     font-size: 20px;
+     text-align: center;
+     color: inherit;
+
+     @include respond(phone) {
+         font-size: 15px;
+     }
+ }

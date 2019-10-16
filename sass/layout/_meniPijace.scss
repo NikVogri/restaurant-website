@@ -1,0 +1,22 @@
+.meni__pijace {
+    display: flex;
+    margin: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include respond(tab-landplus) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+.meni__pijaca {
+    display: block;
+    margin: 1rem 2rem;
+    min-width: 8rem;
+    max-width: 20%;
+
+    @include respond(tab-landplus) {
+        max-width: 100%;
+    }
+}

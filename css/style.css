@@ -326,6 +326,79 @@ a {
   list-style: none;
   text-decoration: none; }
 
+.meni__header {
+  margin: 2rem 0;
+  font-family: 'Sylfaen', sans-serif;
+  font-size: 55px;
+  color: var(--main-orange-color);
+  position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .meni__header {
+      text-align: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .meni__header {
+      font-size: 45px;
+      margin: 5rem 0; } }
+  .meni__header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 3px;
+    background: var(--main-orange-color); }
+    @media only screen and (max-width: 37.5em) {
+      .meni__header::before {
+        width: 100%; } }
+  .meni__header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background: var(--main-orange-color); }
+    @media only screen and (max-width: 37.5em) {
+      .meni__header::after {
+        width: 100%; } }
+
+.meni__jediHeader {
+  font-family: 'Sylfaen', sans-serif;
+  font-size: 35px;
+  color: var(--main-orange-color);
+  text-align: left; }
+  @media only screen and (max-width: 37.5em) {
+    .meni__jediHeader {
+      font-size: 25px;
+      text-align: center; } }
+
+.meni__jediText {
+  font-family: 'roboto', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: inherit; }
+  @media only screen and (max-width: 37.5em) {
+    .meni__jediText {
+      font-size: 16px; } }
+
+.meni__pijacaHeader {
+  font-family: 'Sylfaen', sans-serif;
+  font-size: 35px;
+  color: var(--main-orange-color);
+  text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .meni__pijacaHeader {
+      font-size: 25px; } }
+
+.meni__pijacaText {
+  font-family: 'roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: inherit; }
+  @media only screen and (max-width: 37.5em) {
+    .meni__pijacaText {
+      font-size: 15px; } }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -1167,6 +1240,39 @@ a {
       @media only screen and (max-width: 37.5em) {
         .dogodki__sobe-img img {
           width: 100%; } }
+
+.meni {
+  padding: 5rem 3rem;
+  margin: 2rem 15rem;
+  border: 1px solid var(--main-dark-color); }
+  @media only screen and (max-width: 62.5em) {
+    .meni {
+      margin: 2rem 10rem;
+      padding: 5rem 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .meni {
+      margin: 2rem 0; } }
+  .meni__logo {
+    text-align: center; }
+
+.meni__pijace {
+  display: flex;
+  margin: .5rem;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media only screen and (max-width: 62.5em) {
+    .meni__pijace {
+      flex-direction: column;
+      flex-wrap: nowrap; } }
+
+.meni__pijaca {
+  display: block;
+  margin: 1rem 2rem;
+  min-width: 8rem;
+  max-width: 20%; }
+  @media only screen and (max-width: 62.5em) {
+    .meni__pijaca {
+      max-width: 100%; } }
 
 .predstavitev {
   padding: 30rem 5rem 5rem 0; }
