@@ -1,0 +1,27 @@
+.bar__parallax1 {
+    margin-top: 20rem;
+    width: 100%;
+    height: 35rem;
+    background: url('../img/hero-mid.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    @include phoneParallax;
+}
+
+.bar__parallax2 {
+    width: 100%;
+    height: 35rem;
+    background: url('../img/bar/bar-banner-middle.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    @include phoneParallax;
+}
+
+.bar__parallax3 {
+    width: 100%;
+    height: 35rem;
+    background: url('../img/bar/bar-in-strezba-mid.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    @include phoneParallax;
+}

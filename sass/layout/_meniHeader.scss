@@ -14,5 +14,11 @@
 
     &__logo {
         text-align: center;
+
+        & img {
+            @include respond(small-phone) {
+                width: 35rem;
+            }
+        }
     }
 }

@@ -223,3 +223,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     font-family: "roboto",
         sans-serif;
 }
+
+@mixin phoneParallax {
+    @include respond(phone) {
+        height: 45rem;
+    }
+}

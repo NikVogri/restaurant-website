@@ -371,6 +371,9 @@ a {
     .meni__jediHeader {
       font-size: 25px;
       text-align: center; } }
+  @media only screen and (max-width: 25em) {
+    .meni__jediHeader {
+      font-size: 30px; } }
 
 .meni__jediText {
   font-family: 'roboto', sans-serif;
@@ -1254,6 +1257,9 @@ a {
       margin: 2rem 0; } }
   .meni__logo {
     text-align: center; }
+    @media only screen and (max-width: 25em) {
+      .meni__logo img {
+        width: 35rem; } }
 
 .meni__pijace {
   display: flex;
@@ -1273,6 +1279,130 @@ a {
   @media only screen and (max-width: 62.5em) {
     .meni__pijaca {
       max-width: 100%; } }
+
+.bar__parallax1 {
+  margin-top: 20rem;
+  width: 100%;
+  height: 35rem;
+  background: url("../img/hero-mid.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed; }
+  @media only screen and (max-width: 37.5em) {
+    .bar__parallax1 {
+      height: 45rem; } }
+
+.bar__parallax2 {
+  width: 100%;
+  height: 35rem;
+  background: url("../img/bar/bar-banner-middle.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed; }
+  @media only screen and (max-width: 37.5em) {
+    .bar__parallax2 {
+      height: 45rem; } }
+
+.bar__parallax3 {
+  width: 100%;
+  height: 35rem;
+  background: url("../img/bar/bar-in-strezba-mid.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed; }
+  @media only screen and (max-width: 37.5em) {
+    .bar__parallax3 {
+      height: 45rem; } }
+
+.bar__pijace {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .bar__pijace {
+      padding: 0 2rem; } }
+  @media only screen and (max-width: 25em) {
+    .bar__pijace {
+      padding: 0; } }
+
+.bar__pijaca {
+  width: 32rem;
+  margin: 3rem 5rem; }
+  @media only screen and (max-width: 87.5em) {
+    .bar__pijaca {
+      margin: 3rem auto; } }
+  @media only screen and (max-width: 56.25em) {
+    .bar__pijaca {
+      margin: 3rem auto;
+      width: 45%; } }
+  @media only screen and (max-width: 37.5em) {
+    .bar__pijaca {
+      width: 100%; } }
+  .bar__pijaca:hover .bar__pijaca-alkohol {
+    display: block; }
+  .bar__pijaca:hover .bar__pijaca-img {
+    filter: brightness(50%); }
+  .bar__pijaca-header {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Sylfaen", sans-serif;
+    color: var(--main-orange-color);
+    text-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .bar__pijaca-header {
+        font-size: 45px; } }
+    @media only screen and (max-width: 25em) {
+      .bar__pijaca-header {
+        font-size: 35px; } }
+  .bar__pijaca-text {
+    margin: 1rem auto;
+    font-size: 20px;
+    width: 85%;
+    font-family: "roboto", sans-serif;
+    text-align: center; }
+    @media only screen and (max-width: 25em) {
+      .bar__pijaca-text {
+        font-size: 15px; } }
+  .bar__pijaca-img {
+    margin-top: 1rem;
+    width: 100%;
+    min-width: 27rem;
+    height: 50rem;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center; }
+    @media only screen and (max-width: 37.5em) {
+      .bar__pijaca-img {
+        border-radius: 0; } }
+    .bar__pijaca-img-wrapper {
+      position: relative; }
+  .bar__pijaca-alkohol {
+    display: none;
+    position: absolute;
+    font-family: "Sylfaen", sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    text-align: center;
+    color: var(--main-white-color);
+    font-weight: 200;
+    line-height: 1;
+    align-self: center;
+    transition: all .5s; }
+    .bar__pijaca-alkohol::before {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background: var(--main-white-color);
+      position: absolute;
+      left: 0;
+      top: -5%; }
+    .bar__pijaca-alkohol::after {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background: var(--main-white-color);
+      position: absolute;
+      left: 0;
+      bottom: -5%; }
 
 .predstavitev {
   padding: 30rem 5rem 5rem 0; }
@@ -1327,3 +1457,23 @@ a {
       text-align: right;
       font-size: 1.8rem;
       margin: 2.5rem 2rem 0 0; }
+
+.bar {
+  padding: 5rem 0; }
+  .bar__text-wrapper {
+    width: 65%;
+    margin: 5rem auto;
+    text-align: center; }
+    @media only screen and (max-width: 56.25em) {
+      .bar__text-wrapper {
+        width: 75%; } }
+    @media only screen and (max-width: 37.5em) {
+      .bar__text-wrapper {
+        width: 95%; } }
+  .bar__text {
+    font-size: 2.3rem;
+    font-weight: 300;
+    font-family: "roboto", sans-serif; }
+    .bar__text span {
+      display: block;
+      margin: 2.5rem 0; }
