@@ -1290,6 +1290,11 @@ a {
   @media only screen and (max-width: 37.5em) {
     .bar__parallax1 {
       height: 45rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .bar__parallax1 {
+      background: url("../img/hero-small.jpg") no-repeat center;
+      background-size: cover;
+      background-attachment: fixed; } }
 
 .bar__parallax2 {
   width: 100%;
@@ -1300,6 +1305,11 @@ a {
   @media only screen and (max-width: 37.5em) {
     .bar__parallax2 {
       height: 45rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .bar__parallax2 {
+      background: url("../img/bar/bar-banner-small.jpg") no-repeat center;
+      background-size: cover;
+      background-attachment: fixed; } }
 
 .bar__parallax3 {
   width: 100%;
@@ -1310,6 +1320,11 @@ a {
   @media only screen and (max-width: 37.5em) {
     .bar__parallax3 {
       height: 45rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .bar__parallax3 {
+      background: url("../img/bar/bar-in-strezba-small.jpg") no-repeat center;
+      background-size: cover;
+      background-attachment: fixed; } }
 
 .bar__pijace {
   display: flex;

@@ -6,6 +6,12 @@
     background-size: cover;
     background-attachment: fixed;
     @include phoneParallax;
+
+    @include respond(tab-landplus) {
+        background: url('../img/hero-small.jpg') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
 
 .bar__parallax2 {
@@ -15,6 +21,12 @@
     background-size: cover;
     background-attachment: fixed;
     @include phoneParallax;
+
+    @include respond(tab-landplus) {
+        background: url('../img/bar/bar-banner-small.jpg') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
 
 .bar__parallax3 {
@@ -24,4 +36,10 @@
     background-size: cover;
     background-attachment: fixed;
     @include phoneParallax;
+
+    @include respond(tab-landplus) {
+        background: url('../img/bar/bar-in-strezba-small.jpg') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
