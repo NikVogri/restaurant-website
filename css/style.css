@@ -1437,7 +1437,7 @@ a {
     position: relative; }
   .dogodki__parallax__img {
     margin-top: 25rem;
-    background: url("../../img/dogodki/parallax-big.jpg") no-repeat center;
+    background: url("../img/dogodki/parallax-big.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 50rem; }
