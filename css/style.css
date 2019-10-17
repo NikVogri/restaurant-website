@@ -1447,22 +1447,25 @@ a {
   .dogodki__parallax__text {
     position: absolute;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--main-white-color);
     text-align: center;
     top: 50%;
     left: 50%;
-    padding: 5rem 3rem;
+    padding: 5rem 2rem;
     line-height: 1.8;
     background: rgba(0, 0, 0, 0.5);
     transform: translate(-50%, -50%);
-    width: 35%; }
-    @media only screen and (max-width: 62.5em) {
+    width: 45%; }
+    @media only screen and (max-width: 75em) {
       .dogodki__parallax__text {
         width: 50%; } }
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 62.5em) {
       .dogodki__parallax__text {
         width: 60%; } }
+    @media only screen and (max-width: 56.25em) {
+      .dogodki__parallax__text {
+        width: 70%; } }
     @media only screen and (max-width: 37.5em) {
       .dogodki__parallax__text {
         width: 100%;

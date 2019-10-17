@@ -25,23 +25,27 @@
     &__parallax__text {
         position: absolute;
         font-weight: 300;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: var(--main-white-color);
         text-align: center;
         top: 50%;
         left: 50%;
-        padding: 5rem 3rem;
+        padding: 5rem 2rem;
         line-height: 1.8;
         background: rgba(0, 0, 0, .5);
         transform: translate(-50%, -50%);
-        width: 35%;
+        width: 45%;
 
-        @include respond(tab-landplus) {
+        @include respond(tab-land) {
             width: 50%;
         }
 
-        @include respond(tab-port) {
+        @include respond(tab-landplus) {
             width: 60%;
+        }
+
+        @include respond(tab-port) {
+            width: 70%;
         }
 
         @include respond(phone) {
