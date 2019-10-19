@@ -49,6 +49,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .vertical-effect {
       display: none; } }
 
+::selection {
+  background: var(--main-orange-color);
+  color: var(--main-white-color); }
+
 .burger-menu {
   display: none; }
   @media only screen and (max-width: 56.25em) {
@@ -197,7 +201,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
           font-size: 15px; } }
       .dogodki__form-dodatno__text p span {
         color: red; }
-    .dogodki__form-dodatno input {
+    .dogodki__form-dodatno textarea {
       width: 30rem;
       height: 15rem;
       border: 1px solid var(--main-dark-color);
@@ -444,7 +448,8 @@ a {
 .navigation {
   width: 100%;
   height: 6rem;
-  background: var(--main-orange-color); }
+  background: linear-gradient(132deg, #E17E24, #c56f1f);
+  animation: NavGradient 5s ease; }
   @media only screen and (max-width: 56.25em) {
     .navigation {
       height: 0; } }
@@ -500,6 +505,14 @@ a {
 .display-me {
   display: block; }
 
+@keyframes NavGradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 .footer {
   padding: 5rem 2rem;
   display: flex;
@@ -516,9 +529,13 @@ a {
     .footer__logo-big {
       order: 0;
       margin-bottom: .5rem; } }
-  @media only screen and (max-width: 25em) {
-    .footer__logo-big img {
-      width: 30rem; } }
+  .footer__logo-big img {
+    transition: all .2s ease-out; }
+    @media only screen and (max-width: 25em) {
+      .footer__logo-big img {
+        width: 30rem; } }
+    .footer__logo-big img:hover {
+      transform: scale(1.1); }
   .footer__header {
     font-family: "roboto", sans-serif;
     font-weight: 700;
@@ -533,7 +550,12 @@ a {
   .footer__povezave ul {
     font-size: 15px; }
     .footer__povezave ul li {
+      transition: all .1s;
+      text-decoration: underline !important;
       color: var(--main-dark-color); }
+      .footer__povezave ul li:hover {
+        background: var(--main-orange-color);
+        color: var(--main-white-color); }
   .footer__kontakt {
     margin: 0 .3rem;
     font-size: 15px; }
@@ -552,6 +574,8 @@ a {
       height: 30px;
       width: 30px;
       margin: 0 1rem; }
+      .footer__social-image:hover {
+        filter: invert(50%) contrast(150%); }
       @media only screen and (max-width: 56.25em) {
         .footer__social-image {
           height: 35px;
@@ -586,13 +610,17 @@ a {
     @media only screen and (max-width: 56.25em) {
       .info-top__language-selection {
         display: none; } }
-  @media only screen and (max-width: 56.25em) {
-    .info-top__logo-big img {
-      transform: translateX(-3%);
-      height: 10rem; } }
-  @media only screen and (max-width: 25em) {
-    .info-top__logo-big img {
-      height: 7rem; } }
+  .info-top__logo-big img {
+    transition: all .2s ease; }
+    @media only screen and (max-width: 56.25em) {
+      .info-top__logo-big img {
+        transform: translateX(-3%);
+        height: 10rem; } }
+    @media only screen and (max-width: 25em) {
+      .info-top__logo-big img {
+        height: 7rem; } }
+    .info-top__logo-big img:hover {
+      transform: scale(1.05); }
   .info-top__call {
     width: 100%;
     font-size: 1.5rem;

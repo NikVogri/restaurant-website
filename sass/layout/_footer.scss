@@ -21,8 +21,14 @@
         }
 
         & img {
+            transition: all .2s ease-out;
+
             @include respond(small-phone) {
                 width: 30rem;
+            }
+
+            &:hover {
+                transform: scale(1.1);
             }
         }
     }
@@ -49,7 +55,14 @@
         font-size: 15px;
 
         & li {
+            transition: all .1s;
+            text-decoration: underline !important;
             color: var(--main-dark-color);
+
+            &:hover {
+                background: var(--main-orange-color);
+                color: var(--main-white-color);
+            }
         }
     }
 
@@ -79,6 +92,10 @@
             height: 30px;
             width: 30px;
             margin: 0 1rem;
+
+            &:hover {
+                filter: invert(50%) contrast(150%);
+            }
 
             @include respond(tab-port) {
                 height: 35px;

@@ -7,12 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Pikamania | O nas</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <section class="info-top">
+  <section data-aos="fade-down" class="info-top">
     <div class="info-top__language">
       <ul class="info-top__language-selection no-decoration">
         <li>Slovenščina(SLO)</li>
@@ -52,14 +53,14 @@
     </div>
   </nav>
   <section>
-    <div class="onas__hero">
+    <div data-aos="fade-up" class="onas__hero">
       <img srcset="./img/onas/onas-header-medium.jpg 2000w, ./img/onas/onas-header-big.jpg 3000w" alt="hero big">
     </div>
     <h2 class="header-secondary">kdo smo</h2>
   </section>
   <section class="onas">
     <div class="onas__text">
-      <p>Lorem ipsum dolor sit amet, consectetur
+      <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Aenean dignissim porttitor
         sagittis. Proin vel luctus mauris. Duis
         tempor eleifend feugiat. Aliquam a leo
@@ -73,34 +74,34 @@
         hendrerit vehicula. Donec mollis dolor sed
         nisl consequat facilisis. Cras et pretium
         augue. </p>
-      <p>rttitor facilisis est eu tempor. Donec condimentum ornare metus eget pretium. Fusce ultricies lorem ipsum,
+      <p data-aos="fade-left">rttitor facilisis est eu tempor. Donec condimentum ornare metus eget pretium. Fusce
+        ultricies lorem ipsum,
         quis condimentum mauris ultricies vitae. Nullam vitae interdum tortor. Nam a ultrices eros. In ornare lacus
         sit amet justo aliquam, ut consectetur augue rutrum. Integer finibus libero in bibendum hendrerit. In tortor
         lorem, egestas at euismod sed, scelerisque non nulla. Duis laoreet sodales diam ac lobortis. Donec at congue
         orci, vel mattis urna. Integer condimentum tempor magna laoreet pulvinar. Mauris lorem massa, maximus nec
         finibus a, hendrerit eu mi.</p>
     </div>
-    <div class="onas__video">
+    <div data-aos="fade-right" class="onas__video">
       <div class="onas__video1">
         <p class="onas__video1-text">VESELJE DO KUHANJA</p>
-        <video src="./img/onas/video1.mp4" autoplay loop></video>
+        <video src="./img/onas/video1.mp4" autoplay loop muted></video>
       </div>
 
-      <div class="onas__video1">
-        <p class="onas__video1-text">ZNANJE IZ
-          CELOTNEGA SVETA</p>
+      <div data-aos="fade-left" class="onas__video1">
+        <p class="onas__video1-text">PEČENO DO PERFEKCIJE</p>
         <video src="./img/onas/video2.mp4" autoplay loop muted></video>
       </div>
     </div>
-    <h2 class="header-secondary">ekipa</h2>
+    <h2 data-aos="fade-down" class="header-secondary">ekipa</h2>
 
     <div class="onas__ekipa">
       <div class="ekipa">
-        <div class="ekipa__img">
+        <div data-aos="fade-right" data-aos-offset="300" class="ekipa__img">
           <img srcset="./img/onas/chef-small.jpg 1000w, ./img/onas/chef-middle.jpg 2000w, ./img/onas/chef-big.jpg 3000w"
             alt="kuhar">
         </div>
-        <div class="ekipa__desna">
+        <div data-aos="fade-left" data-aos-offset="300" data-aos-delay="150" class="ekipa__desna">
           <p class="ekipa__desna-header">Glavni Kuhar</p>
           <p class="ekipa__desna-text">Quisque mauris dolor, vestibulum eget neque sit amet, rhoncus ornare felis.Etiam
             suscipit dictum semper. Etiam sagittis tincidunt dui quis placerat. Nunc tincidunt lobortis odio sed
@@ -110,12 +111,12 @@
 
 
       <div class="ekipa ekipa--reverse">
-        <div class="ekipa__img">
+        <div data-aos="fade-left" data-aos-offset="300" class="ekipa__img">
           <img
             srcset="./img/onas/staff-small.jpg 1000w, ./img/onas/staff-middle.jpg 2000w, ./img/onas/staff-big.jpg 3000w"
             alt="kuhar">
         </div>
-        <div class="ekipa__desna">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-delay="150" class="ekipa__desna">
           <p class="ekipa__desna-header ekipa__desna-header--reverse">Osebje</p>
           <p class="ekipa__desna-text ekipa__desna-text--reverse">Nam orci nulla, viverra sit amet aliquam quis,
             volutpat
@@ -190,6 +191,10 @@
 
   </footer>
   <script src="scripts/Mobile_menu.js"></script>
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 </body>
 

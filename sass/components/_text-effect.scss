@@ -42,3 +42,8 @@
         display: none;
     }
 }
+
+::selection {
+    background: var(--main-orange-color);
+    color: var(--main-white-color);
+}

@@ -31,6 +31,8 @@
     }
 
     &__logo-big img {
+        transition: all .2s ease;
+
         @include respond(tab-port) {
             transform: translateX(-3%);
             height: 10rem;
@@ -40,6 +42,9 @@
             height: 7rem;
         }
 
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__call {
