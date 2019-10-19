@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pikamania | Jedi</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="info-top">
+    <section data-aos="fade-down" class="info-top">
         <div class="info-top__language">
             <ul class="info-top__language-selection no-decoration">
                 <li>Slovenščina(SLO)</li>
@@ -52,7 +53,7 @@
         </div>
     </nav>
     <section>
-        <div class="jedi__hero__header">
+        <div data-aos="fade-up" class="jedi__hero__header">
             <h2 class="jedi__hero__header-text">Jedi</h2>
             <img srcset="./img/jedi/apetizer-small.jpg 1000w, ./img/jedi/apetizer-medium.jpg 2000w, ./img/jedi/apetizer-big.jpg 3000w"
                 alt="hero big">
@@ -61,13 +62,13 @@
     </section>
     <section class="predstavitev">
         <div class="predstavitev__box">
-            <div class="predstavitev__box-leva">
+            <div data-aos="fade-right" class="predstavitev__box-leva">
                 <div class="predstavitev__box-img">
                     <img srcset="./img/jedi/steak-small.jpg 1000w, ./img/jedi/steak-medium.jpg 2000w, ./img/jedi/steak-big.jpg 3000w"
                         alt="steak">
                 </div>
             </div>
-            <div class="predstavitev__box-desna">
+            <div data-aos="fade-left" class="predstavitev__box-desna">
                 <h3 class="predstavitev__box-header">
                     <span>S</span><span>T</span><span>E</span><span>A</span><span>K</span></h3>
                 <p class="predstavitev__box-text">Vivamus dignissim ex vel fermentum bibendum. Nullam vulputate congue
@@ -79,13 +80,13 @@
             </div>
         </div>
         <div class="predstavitev__box predstavitev__box--orange">
-            <div class="predstavitev__box-leva predstavitev__box-leva--reverse">
+            <div data-aos="fade-left" class="predstavitev__box-leva predstavitev__box-leva--reverse">
                 <div class="predstavitev__box-img">
                     <img srcset="./img/jedi/burger-small.jpg 1000w, ./img/jedi/burger-medium.jpg 2000w, ./img/jedi/burger-big.jpg 3000w"
                         alt="steak">
                 </div>
             </div>
-            <div class="predstavitev__box-desna predstavitev__box-desna--reverse">
+            <div data-aos="fade-right" class="predstavitev__box-desna predstavitev__box-desna--reverse">
                 <h3 class="predstavitev__box-header predstavitev__box-header--white">
                     <span>B</span><span>U</span><span>R</span><span>G</span><span>E</span><span>R</span></h3>
                 <p class="predstavitev__box-text predstavitev__box-text--white">Lorem ipsum dolor sit amet, consectetur
@@ -96,13 +97,13 @@
         </div>
 
         <div class="predstavitev__box">
-            <div class="predstavitev__box-leva">
+            <div data-aos="fade-right" class="predstavitev__box-leva">
                 <div class="predstavitev__box-img">
                     <img srcset=" ./img/jedi/pizza-small.jpg 1000w, ./img/jedi/pizza-medium.jpg 2000w, ./img/jedi/pizza-big.jpg 3000w"
                         alt="steak">
                 </div>
             </div>
-            <div class="predstavitev__box-desna">
+            <div data-aos="fade-left" class="predstavitev__box-desna">
                 <h3 class="predstavitev__box-header">
                     <span>P</span><span>I</span><span>Z</span><span>Z</span><span>A</span></h3>
                 <p class="predstavitev__box-text">Morbi justo mi, scelerisque vitae lorem id, condimentum molestie est.
@@ -114,13 +115,13 @@
         </div>
 
         <div class="predstavitev__box predstavitev__box--orange">
-            <div class="predstavitev__box-leva predstavitev__box-leva--reverse">
+            <div data-aos="fade-left" class="predstavitev__box-leva predstavitev__box-leva--reverse">
                 <div class="predstavitev__box-img">
                     <img srcset="./img/jedi/pasta-small.jpg 1000w, ./img/jedi/pasta-medium.jpg 2000w, ./img/jedi/pasta-big.jpg 3000w"
                         alt="pasta">
                 </div>
             </div>
-            <div class="predstavitev__box-desna predstavitev__box-desna--reverse">
+            <div data-aos="fade-right" class="predstavitev__box-desna predstavitev__box-desna--reverse">
                 <h3 class="predstavitev__box-header predstavitev__box-header--white">
                     <span>P</span><span>A</span><span>S</span><span>T</span><span>A</span></h3>
                 <p class="predstavitev__box-text predstavitev__box-text--white"> Quisque vitae semper dolor, eu egestas
@@ -187,6 +188,10 @@
 
     </footer>
     <script src="scripts/Mobile_menu.js"></script>
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
